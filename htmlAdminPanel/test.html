@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first Vue app</title>
+		<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+	</head>
+	<body>
+		
+	<script src="https://unpkg.com/vue@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+<div>
+  <b-form inline>
+    <label class="mr-sm-2" for="inline-form-custom-select-pref">Preference</label>
+    <b-form-select
+      id="inline-form-custom-select-pref"
+      class="mb-2 mr-sm-2 mb-sm-0"
+      :options="[{ text: 'Choose...', value: null }, 'One', 'Two', 'Three']"
+      :value="null"
+    ></b-form-select>
+
+    <b-form-checkbox class="mb-2 mr-sm-2 mb-sm-0">Remember my preference</b-form-checkbox>
+
+    <b-button variant="primary">Save</b-button>
+  </b-form>
+</div>
+	</body>
+	
+	
+</html>
